@@ -4,10 +4,10 @@
   "description": "This repository contains a project based on interaction with the erc1155 token using smart contracts",
   "main": "hardhat.config.js",
   "scripts": {
-    "compile": "npm run prettier:solidity && npx hardhat compile",
-    "test": "npm run eslint:fix-tests && npx hardhat test",
-    "coverage": "npx hardhat coverage",
-    "eslint:fix-tests": "eslint test/* --fix",
+    "compile": "yarn run prettier:solidity && npx hardhat compile",
+    "test": "yarn run eslint:fix-tests && npx hardhat test",
+    "coverage": "yarn hardhat coverage",
+    "eslint:fix-tests": "npx eslint test/* --fix",
     "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
   },
   "repository": "https://github.com/MolPeCJ/ERC1155Example.git",

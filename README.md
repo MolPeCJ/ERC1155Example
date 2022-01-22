@@ -18,18 +18,18 @@ which are listed in the 'package.json' file (for example, coverage (```yarn inst
 
 ### Compilation
 
-```npx hardhat compile```
+```yarn hardhat compile```
 
 ### Run tests and coverage 
 
-```npx hardhat coverage```
+```yarn hardhat coverage```
 
 ### Deploying contract
 
 ```npx hardhat run scripts/ *select the file you want to run*``` 
---network rinkeby
+--network `<your network>`
 
 ### Verify a contract
 
 ```npx hardhat run scripts/ *select the file you want to run*``` 
---network rinkeby
+--network `<your network>`
