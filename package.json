@@ -1,0 +1,47 @@
+{
+  "name": "erc1155example",
+  "version": "0.0.1",
+  "description": "This repository contains a project based on interaction with the erc1155 token using smart contracts",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "compile": "npm run prettier:solidity && npx hardhat compile",
+    "test": "npm run eslint:fix-tests && npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "eslint:fix-tests": "eslint test/* --fix",
+    "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
+  },
+  "repository": "https://github.com/MolPeCJ/ERC1155Example.git",
+  "keywords": [
+    "erc1155",
+    "nft",
+    "buyToken"
+  ],
+  "author": "MolPeCJ",
+  "license": "MIT",
+  "engines": {
+    "npm": ">=6.12.0",
+    "node": ">=12.13.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.2",
+    "hardhat": "^2.7.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solidity-coverage": "^0.7.17",
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "axios": "^0.25.0",
+    "delay": "^5.0.0",
+    "dotenv": "^10.0.0",
+    "hardhat-deploy": "^0.9.22",
+    "solhint": "^3.3.6"
+  }
+}
